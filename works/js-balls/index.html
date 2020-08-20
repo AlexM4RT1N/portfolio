@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Balls</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../css/back.css" />
+  </head>
+  
+  <body>
+    <a id="to-return" href="../../index.html">back</a>
+
+    <img src="./img/cog.svg" class="fa-cog" id="cog"/>
+    <img src="./img/cogsub.svg" class="fa-cog fa-cogsub"/>
+    <img src="./img/top.svg" class="fa-top" id="top"/>
+    <img src="./img/topsub.svg" class="fa-top fa-topsub"/>
+    <img src="./img/score.svg" class="fa-score" id="score"/>
+    <img src="./img/scoresub.svg" class="fa-score fa-scoresub"/>
+    <img src="./img/play.svg" class="fa-play" id="play"/>
+    <img src="./img/playsub.svg" class="fa-play fa-playsub"/>
+    <input class="nameplayer" name="name" type="text" id="nameplayer" 
+    placeholder="Your Nickname... *" pattern="[0-9A-Za-z_-]+"
+    minlength="3" maxlength="12" required/>
+
+    <ul class="score-list" id="scorelist">
+      <li>
+        <ul class="score-list-name" id="scorelistname">
+
+        </ul>
+      </li>
+      <li>
+        <ul class="score-list-score" id="scorelistscore">
+
+        </ul>
+      </li>
+    </ul>
+
+    <form class="settings" id="settings">
+      <h2>Game settings:</h2>
+
+      <div class="settings__blocks">
+        <label for="maxsize">Max size balls</label>
+        <input type="range" id="maxsize" name="maxsize" min="1" max="30" step="1"/>
+        <span id="maxsizevalue"></span>
+      </div>
+
+      <div class="settings__blocks">
+        <label for="minsize">Min size balls</label>
+        <input type="range" id="minsize" name="minsize" min="1" max="15" step="1"/>
+        <span id="minsizevalue"></span>
+      </div>
+
+      <div class="settings__blocks">
+        <label for="speed">Speed balls</label>
+        <input type="range" id="speed" name="speed" min="1" max="20" step="1"/>
+        <span id="speedvalue"></span>
+      </div>
+
+      <div class="settings__blocks">
+        <label for="ballsnumber">Number of balls</label>
+        <input type="range" id="ballsnumber" name="ballsnumber" min="0" max="120" step="5"/>
+        <span id="ballsnumbervalue"></span>
+      </div>
+
+      
+      <div class="settings__buttons">
+        <button class="default" id="default">Reset settings to default</button>
+        
+        <div class="change-player" id="changeplayer">Change player</div>
+        <div class="new-player" id="newplayer">New player</div>
+
+        <ul class="list-change-name" id="listchangename">
+          
+        </ul>
+
+      </div>
+
+    </form>
+
+    <canvas id="canvas"></canvas>
+    
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,449 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+img {
+	display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.fa-cog {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  left: 8px;
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  transform: rotateX(40deg);
+  transition: all 0.5s;
+}
+.fa-cogsub {
+  top: 10px;
+  z-index: 4;
+  transition: all 0.5s;
+}
+.fa-cog:hover,
+.fa-cog:hover + .fa-cogsub {
+  top: 5px;
+  left: 8px;
+  width: 50px;
+  height: 50px;
+  transform: rotateX(0deg);
+  transform: rotateZ(0deg);
+  transition: all 0.5s;
+}
+.fa-cog.active {
+  top: 9px;
+  left: 12px;
+  width: 42px;
+  height: 42px;
+  transform: rotateX(0deg);
+  transform: rotateZ(20deg);
+  transition: all 0.5s;
+  transition: transform 0.3s 0.3s;
+}
+.fa-cogsub.active {
+  top: 5px;
+  left: 8px;
+  width: 50px;
+  height: 50px;
+  transform: rotateX(0deg);
+  transform: rotateZ(20deg);
+  transition: all 0.5s;
+}
+
+.fa-play {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+  top: 5px;
+  left: calc(25% + 127px);
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  transform: rotateX(40deg);
+  transition: all 0.5s;
+}
+.fa-playsub {
+  top: 10px;
+  z-index: 4;
+  transition: all 0.5s;
+}
+.fa-play:hover,
+.fa-play:hover + .fa-playsub {
+  top: 5px;
+  left: calc(25% + 127px);
+  width: 50px;
+  height: 50px;
+  transform: rotateX(0deg);
+  transform: rotateZ(0deg);
+  transition: all 0.5s;
+}
+.fa-play.active {
+  top: 9px;
+  left: calc(25% + 127px);
+  width: 42px;
+  height: 42px;
+  transform: rotateX(0deg);
+  transform: rotateZ(20deg);
+  transition: all 0.5s;
+  transition: transform 0.3s 0.3s;
+}
+.fa-playsub.active {
+  top: 5px;
+  left: calc(50% - 110px);
+  width: 50px;
+  height: 50px;
+  transform: rotateX(0deg);
+  transform: rotateZ(20deg);
+  transition: all 0.5s;
+}
+
+.fa-score {
+  position: absolute;
+  top: 6px;
+  left: calc(50% - 10px);
+  width: 60px;
+  height: 60px;
+  z-index: 5;
+  transform: rotateX(40deg);
+  transition: all 0.5s;
+}
+.fa-scoresub {
+  top: 12px;
+  z-index: 4;
+  transition: all 0.5s;
+}
+.fa-score:hover,
+.fa-score:hover + .fa-scoresub {
+  top: 9px;
+  left: calc(50% - 10px);
+  width: 60px;
+  height: 60px;
+  transform: rotateX(0deg);
+  transform: rotateZ(0deg);
+  transition: all 0.5s;
+}
+
+
+
+.fa-top {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  transform: rotateY(30deg);
+  transition: all 0.5s;
+}
+.fa-topsub {
+  right: 12px;
+  z-index: 4;
+  transition: all 0.5s;
+}
+.fa-top:hover,
+.fa-top:hover + .fa-topsub {
+  top: 5px;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  transform: rotateY(0deg);
+  transition: all 0.5s;
+}
+
+.fa-top.active {
+  top: 9px;
+  right: 8px;
+  width: 42px;
+  height: 42px;
+  transform: rotateY(0deg);
+  transform: rotateZ(-20deg);
+  transition: all 0.5s;
+}
+.fa-topsub.active {
+  right: 8px;
+  transform: rotateY(0deg);
+  transform: rotateZ(-20deg);
+  transition: all 0.5s;
+}
+.fa-top.active:hover,
+.fa-top.active:hover + .fa-topsub.active {
+  top: 5px;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  transform: rotateY(0deg);
+  transform: rotateZ(20deg);
+  transition: all 0.5s;
+}
+.fa-top.active:hover + .fa-topsub.active {
+  top: 5px;
+}
+
+.nameplayer {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  top: 5px;
+  left: calc(25% - 127px);
+  width: 245px;
+  height: 51px;
+  padding: 15px;
+  color: rgb(53, 53, 53);
+  background: rgb(217, 237, 255);
+  border-radius: 5px;
+  box-shadow: inset 1px 5px 5px rgb(66, 66, 66), 1px 5px 2px rgb(121, 121, 121);
+  transform: rotateX(40deg);
+  transition: all 0.5s;
+  font-size: 18px;
+  text-shadow:  1px 5px 4px rgb(66, 66, 66);
+}
+.nameplayer:hover,
+.nameplayer:focus {
+  top: 6px;
+  height: 48px;
+  box-shadow: inset 1px 1px 4px rgb(66, 66, 66), 1px 1px 2px rgb(121, 121, 121);
+  transform: rotateX(0deg);
+  transition: all 0.5s;
+  text-shadow:  0px 0px 2px rgb(66, 66, 66);
+}
+.nameplayer::placeholder {
+  font-size: 18px;
+  font-family: serif;
+  color: rgb(53, 53, 53);
+  text-shadow:  1px 5px 4px rgb(66, 66, 66);
+  transform: rotateX(40deg);
+  transition: all 0.5s;
+}
+.nameplayer:hover::placeholder,
+.nameplayer:focus::placeholder {
+  text-shadow:  0px 0px 2px rgb(66, 66, 66);
+  transform: rotateX(0deg);
+  transition: all 0.5s;
+}
+
+.name-label {
+  font-size: 48px;
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  top: 5px;
+  left: calc(25% - 127px);
+  width: 245px;
+  height: 51px;
+  padding: 0px 15px;
+  color: rgb(217, 237, 255);
+  transition: all 0.5s;
+  text-shadow:  1px 5px 4px rgb(150, 150, 150);
+}
+
+.nameplayer.hidden,
+.fa-play.hidden,
+.name-label.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.score-list {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  min-width: 230px;
+  height: 430px;
+  padding: 15px;
+  background: rgb(99, 99, 99);
+  color: rgb(217, 237, 255);
+  color: rgb(217, 237, 255);
+  transition: all 0.5s;
+  font-size: 30px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.score-list li:first-child {
+  flex: 70%;
+}
+.score-list-name li,
+.score-list-score li {
+  margin-bottom: 12px;
+}
+.score-list-score li {
+  padding-left: 12px;
+}
+
+
+.settings {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 80px;
+  left: 15px;
+  width: 230px;
+  min-height: 430px;
+  padding: 15px;
+  background: rgb(99, 99, 99);
+  color: rgb(217, 237, 255);
+  color: rgb(217, 237, 255);
+  transition: all 0.5s;
+}
+.reload-game {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+  height: 170px;
+  cursor: pointer;
+}
+.settings__buttons {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  min-height: 80px;
+}
+.default {
+  color: rgb(217, 237, 255);
+  flex: 100%;
+  margin-bottom: 10px;
+}
+.change-player {
+  margin-right: 10px;
+  flex: 0 0 calc(50% - 5px);
+  
+}
+.list-change-name {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 18px;
+  bottom: 35px;
+  left: 0px;
+  padding: 5px;
+  border: 1px solid snow;
+  box-shadow: 3px 5px 5px rgb(29, 29, 29);
+  background: rgb(99, 99, 99);
+  color: rgb(217, 237, 255);
+  color: rgb(217, 237, 255);
+  transition: all 0.5s;
+}
+.list-change-name li {
+  padding: 8px 12px;
+  color: rgb(217, 237, 255);
+  background: rgb(56, 56, 56);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.list-change-name li:hover {
+  background: rgb(124, 124, 124);
+  transform: scale(1.05);
+  box-shadow: 3px 5px 5px rgb(29, 29, 29);
+  transition: all 0.5s;
+}
+
+.new-player {
+  flex: 0 0 calc(50% - 5px);
+}
+.new-player,
+.change-player ,
+.default {
+  background: rgb(56, 56, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.new-player:hover,
+.change-player:hover,
+.default:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 5px 5px rgb(29, 29, 29);
+  background: rgb(124, 124, 124);
+  transition: all 0.5s;
+}
+
+.score-list.active,
+.settings.active,
+.list-change-name.active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid ivory;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.settings__blocks {
+  margin-bottom: 20px;
+  border-bottom: 1px solid ivory;
+  padding-bottom: 5px;
+}
+
+.settings__blocks label {
+  display: block;
+  margin-bottom: 7px;
+}
+
+span {
+  display: inline-block;
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+input {
+  display: inline-block;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
