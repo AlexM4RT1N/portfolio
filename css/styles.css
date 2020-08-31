@@ -496,7 +496,7 @@ body {
   z-index: 100; }
 
 .bg-fix {
-  background: url(../../images/bg-3840.jpg) center no-repeat;
+  background: url(../images/bg-3840.jpg) center no-repeat;
   background-size: cover;
   position: fixed;
   height: 100vh;
@@ -504,7 +504,7 @@ body {
   z-index: -1; }
   @media (max-width: 767px) {
     .bg-fix {
-      background: url(../../images/bg-mb.jpg) center no-repeat;
+      background: url(../images/bg-mb.jpg) center no-repeat;
       background-size: cover;
       position: fixed;
       height: 100vh;
@@ -613,7 +613,7 @@ body {
         top: -25px;
         width: 83px;
         height: 342px;
-        background: url(../../images/brakets-l.png) center no-repeat;
+        background: url(../images/brakets-l.png) center no-repeat;
         background-size: contain;
         display: block; }
         @media (max-width: 1010px) {
@@ -629,7 +629,7 @@ body {
         top: -27px;
         width: 87px;
         height: 344px;
-        background: url(../../images/brakets-r.png) center no-repeat;
+        background: url(../images/brakets-r.png) center no-repeat;
         background-size: contain;
         display: block; }
         @media (max-width: 1010px) {
@@ -984,17 +984,17 @@ body {
         width: 40px;
         height: 40px; }
       .contact .contacts-list .contacts-item.link-gmail::before {
-        background: url(../../images/mail4.svg) center no-repeat; }
+        background: url(../images/mail4.svg) center no-repeat; }
       .contact .contacts-list .contacts-item.link-phone::before {
-        background: url(../../images/phone.svg) center no-repeat; }
+        background: url(../images/phone.svg) center no-repeat; }
       .contact .contacts-list .contacts-item.link-linkedin::before {
-        background: url(../../images/linkedin.svg) center no-repeat; }
+        background: url(../images/linkedin.svg) center no-repeat; }
       .contact .contacts-list .contacts-item.link-address::before {
-        background: url(../../images/pin.svg) center no-repeat; }
+        background: url(../images/pin.svg) center no-repeat; }
       .contact .contacts-list .contacts-item.link-telegram::before {
-        background: url(../../images/telegram.svg) center no-repeat; }
+        background: url(../images/telegram.svg) center no-repeat; }
       .contact .contacts-list .contacts-item.link-github::before {
-        background: url(../../images/github.svg) center no-repeat; }
+        background: url(../images/github.svg) center no-repeat; }
       .contact .contacts-list .contacts-item.link-gmail::before, .contact .contacts-list .contacts-item.link-phone::before, .contact .contacts-list .contacts-item.link-linkedin::before, .contact .contacts-list .contacts-item.link-address::before, .contact .contacts-list .contacts-item.link-telegram::before, .contact .contacts-list .contacts-item.link-github::before {
         background-size: 40px 40px; }
         @media (max-width: 767px) {
